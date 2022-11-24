@@ -12,15 +12,15 @@ import { UpdateMemberModel } from './updatemember.component';
 })
 export class ClaimService {
   
-baseUrl = 'https://localhost:7270/api/Members';
-claimUrl='https://localhost:7270/api/Claims';
-validateUrl='https://localhost:7092/validate';
-dependentUrl='https://localhost:7270/api/Dependents';
-// baseUrl = 'https://claimservices20221014110544.azurewebsites.net/api/Members';
-// claimUrl='https://claimservices20221014110544.azurewebsites.net/api/Claims';
-// validateUrl='https://memberclaim20221014171753.azurewebsites.net/validate';
-// dependentUrl='https://claimservices20221014110544.azurewebsites.net/api/Dependents';
-claimmemberBookurl ='https://7270/api/Claims';
+// baseUrl = 'https://localhost:7270/api/Members';
+// claimUrl='https://localhost:7270/api/Claims';
+// validateUrl='https://localhost:7092/validate';
+// dependentUrl='https://localhost:7270/api/Dependents';
+baseUrl = 'https://claimservices20221025143708.azurewebsites.net/api/Members';
+claimUrl='https://claimservices20221025143708.azurewebsites.net/api/Claims';
+validateUrl='https://memberclaim20221025144137.azurewebsites.net/validate';
+dependentUrl='https://claimservices20221025143708.azurewebsites.net/api/Dependents';
+// claimmemberBookurl ='https://7270/api/Claims';
 constructor(private http: HttpClient) { }
 addMember(member: MemberModel):Observable<MemberModel> {
     return this.http.post<MemberModel>(this.baseUrl, member);

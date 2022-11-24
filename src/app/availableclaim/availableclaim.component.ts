@@ -148,11 +148,12 @@ ngOnInit(): void {
          dob: dob
         
         }
-        console.log('date',updeps);
+     
     this.claimServiceComponent.updatedependent(id,updeps).subscribe(
       response =>{
         this.claimServiceComponent.getDependentsId(this.memid).subscribe(res => {
         this.dependents = res;
+        alert('dependent content updated');
         })
       }
     );

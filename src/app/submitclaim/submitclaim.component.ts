@@ -77,7 +77,7 @@ if(claim.DateOfDischarge > this.myDate || claim.DateOfAdmission > this.myDate)
 {
  
  console.log(this.myDate);
-  alert("One of the Discharge Date or Admission Date is future Date, please correct it")
+  alert("One of the Discharge Date or Admission Date is future date, please correct it")
   return;
 
 }
